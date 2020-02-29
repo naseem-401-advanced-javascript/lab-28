@@ -1,0 +1,43 @@
+{
+  "name": "lab-28",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": " ",
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naseem-401-advanced-javascript/lab-28.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naseem-401-advanced-javascript/lab-28/issues"
+  },
+  "homepage": "https://github.com/naseem-401-advanced-javascript/lab-28#readme",
+  "dependencies": {
+    "eslint": "^6.8.0",
+    "node-sass": "^4.13.1",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-json-view": "^1.19.1",
+    "react-scripts": "^3.4.0",
+    "superagent": "^5.2.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
