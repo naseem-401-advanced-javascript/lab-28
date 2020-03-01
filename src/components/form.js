@@ -46,12 +46,30 @@ class Form extends React.Component{
           <main>
             <section>
               <form onSubmit={this.apiCaller}>
-                <section>
+                <section id="nn">
                   <input type="text" name="url" value={this.state.url} onChange={this.handleChange} />
+                  <div>
+                  <label class="nn">
+                  <input type="radio" name="method" value="get"  />
+                  <span>GET</span>
+                </label>
+                <label class="nn">
+                  <input type="radio" name="method" value="post"   />
+                  <span>POST</span>
+                </label>
+                <label class="nn" >
+                  <input type="radio" name="method" value="put"  />
+                  <span>PUT</span>
+                </label>
+                <label class="nn">
+                  <input type="radio" name="method" value="delete"   />
+                  <span>DELETE</span>
+                </label>
                   <label> <button type="submit">CALL</button> </label>
+                  </div>
                 </section>
               </form>
-              <div>
+              <div id="style">
                 <ReactJson name="Headers"
                   enableClipboard={false}
                   collapsed={true}
