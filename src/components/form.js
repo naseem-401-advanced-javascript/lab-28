@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactJson from 'react-json-view';
 
 class Form extends React.Component{
     constructor(props){
@@ -33,11 +32,13 @@ class Form extends React.Component{
                 let header = {'Content-Type': 'application/json'};
                 let body = res;
                 this.setState({ header, body });
+                this.props.sendResults({header,body});
               })
               .catch(err =>{
                 let body = {error: err.message};
                 let header = {};
                 this.setState({ header, body });
+                this.props.sendResults({header,body});
               });
           });
       }
@@ -65,22 +66,10 @@ class Form extends React.Component{
                   <input type="radio" name="method" value="delete"   />
                   <span>DELETE</span>
                 </label>
-                  <label> <button type="submit">CALL</button> </label>
+                  <label> <button type="submit">GO!</button> </label>
                   </div>
                 </section>
               </form>
-              <div id="style">
-                <ReactJson name="Headers"
-                  enableClipboard={false}
-                  collapsed={true}
-                  src={this.state.header}
-                />
-                <ReactJson name="Response"
-                  enableClipboard={false}
-                  collapsed={true}
-                  src={this.state.body}
-                />
-              </div>
             </section>
           </main>
         );
