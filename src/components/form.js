@@ -1,23 +1,23 @@
 import React from 'react';
 
 class Form extends React.Component{
-    constructor(props){
-        super(props);
-        this.state = {
-          url: '',
-          method: 'get',
-          header: {},
-          body: {},
-          history: {},
-          headersVisible: false,
-        };
-    }
+  constructor(props){
+    super(props);
+    this.state = {
+      url: '',
+      method: 'get',
+      header: {},
+      body: {},
+      history: {},
+      headersVisible: false,
+    };
+  }
     handleChange = e =>{
-        let name = e.target.name;
-        let value = e.target.value;
-        this.setState({[name]:value});
-      }
-    
+      let name = e.target.name;
+      let value = e.target.value;
+      this.setState({[name]:value});
+    }
+
       apiCaller = e =>{
         e.preventDefault();
         fetch(this.state.url,{
@@ -50,23 +50,23 @@ class Form extends React.Component{
                 <section id="nn">
                   <input type="text" name="url" value={this.state.url} onChange={this.handleChange} />
                   <div>
-                  <label class="nn">
-                  <input type="radio" name="method" value="get"  />
-                  <span>GET</span>
-                </label>
-                <label class="nn">
-                  <input type="radio" name="method" value="post"   />
-                  <span>POST</span>
-                </label>
-                <label class="nn" >
-                  <input type="radio" name="method" value="put"  />
-                  <span>PUT</span>
-                </label>
-                <label class="nn">
-                  <input type="radio" name="method" value="delete"   />
-                  <span>DELETE</span>
-                </label>
-                  <label> <button type="submit">GO!</button> </label>
+                    <label className="nn">
+                      <input type="radio" name="method" value="get"  />
+                      <span>GET</span>
+                    </label>
+                    <label className="nn">
+                      <input type="radio" name="method" value="post"   />
+                      <span>POST</span>
+                    </label>
+                    <label className="nn" >
+                      <input type="radio" name="method" value="put"  />
+                      <span>PUT</span>
+                    </label>
+                    <label className="nn">
+                      <input type="radio" name="method" value="delete"   />
+                      <span>DELETE</span>
+                    </label>
+                    <label> <button type="submit">GO!</button> </label>
                   </div>
                 </section>
               </form>
@@ -74,7 +74,7 @@ class Form extends React.Component{
           </main>
         );
       }
-    
-    }
-    
-    export default Form;
+
+}
+
+export default Form;
