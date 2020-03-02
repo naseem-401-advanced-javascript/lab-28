@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Form /> can render to the DOM 1`] = `
+<main>
+  <section>
+    <form
+      onSubmit={[Function]}
+    >
+      <section
+        id="nn"
+      >
+        <input
+          name="url"
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+        <div>
+          <label
+            className="nn"
+          >
+            <input
+              name="method"
+              type="radio"
+              value="get"
+            />
+            <span>
+              GET
+            </span>
+          </label>
+          <label
+            className="nn"
+          >
+            <input
+              name="method"
+              type="radio"
+              value="post"
+            />
+            <span>
+              POST
+            </span>
+          </label>
+          <label
+            className="nn"
+          >
+            <input
+              name="method"
+              type="radio"
+              value="put"
+            />
+            <span>
+              PUT
+            </span>
+          </label>
+          <label
+            className="nn"
+          >
+            <input
+              name="method"
+              type="radio"
+              value="delete"
+            />
+            <span>
+              DELETE
+            </span>
+          </label>
+          <label>
+             
+            <button
+              type="submit"
+            >
+              GO!
+            </button>
+             
+          </label>
+        </div>
+      </section>
+    </form>
+  </section>
+</main>
+`;
